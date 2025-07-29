@@ -1,7 +1,7 @@
 import asyncio
 import re
 from astrbot.api import logger
-from astrbot.api.message_components import MessageType
+from astrbot.api import MessageType
 from .storage import MessageStorage
 from .article_parser import ArticleParser
 from .note_service import NoteService
