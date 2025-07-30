@@ -1,5 +1,6 @@
 import asyncio
 import re
+import time
 from astrbot.api import logger
 from astrbot.api.message_components import MessageType
 from .storage import MessageStorage
@@ -35,7 +36,7 @@ class MessageHandler:
             'sender_name': event.get_sender_name(),
             'message_str': event.message_str,
             'message_chain': event.get_messages(),
-            'timestamp': event.timestamp,
+            'timestamp': int(time.time()),  # 使用当前时间戳
             'platform': event.get_platform_name()
         }
         
