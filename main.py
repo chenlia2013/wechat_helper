@@ -34,4 +34,4 @@ class WechatHelperPlugin(Star):
             logger.error(f"处理消息时出错: {e}")
         
         # 不中断消息传递
-        return MessageEventResult.EMPTY
+        # return MessageEventResult.EMPTY
